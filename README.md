@@ -23,7 +23,7 @@ gcc -fopenmp -lopenblas -O3 bench.c mmul.c
 ```
 
 (12 Cores, 4.8 GHz, AVX2 (8 mul, 8 add) ~16)
-12 * 4.8 * 16 = 921.6 Gflops
+= 12 * 4.8 * 16 = 921.6 Gflops
 ~= 921600000000 flops
                                                       
 MMUL flops:
