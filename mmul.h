@@ -1,6 +1,8 @@
 #ifndef MMUL_H_
 #define MMUL_H_
 
+#define TILE_SIZE 16
+
 void basic_mmul(int M1, int N2, int N1, const float *A, const float *B,
                 float *C);
 

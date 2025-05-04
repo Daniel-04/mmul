@@ -25,7 +25,6 @@ void restrict_mmul(int M1, int N2, int N1, const float *restrict A,
     }
 }
 
-#define TILE_SIZE 16
 void tiled_mmul(int M1, int N2, int N1, const float *restrict A,
                 const float *restrict B, float *restrict C) {
     for (int it = 0; it < M1; it += TILE_SIZE) {
