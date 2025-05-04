@@ -30,6 +30,11 @@
 */
 
 int main() {
+    if (M2 != N1) {
+        fprintf(stderr, "Incompatible matrix dimensions.\n");
+        return -1;
+    }
+
     float *A = malloc(sizeof(float) * M1 * N1);
     float *B = malloc(sizeof(float) * M2 * N2);
     float *C = malloc(sizeof(float) * M1 * N2);
